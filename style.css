@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+    color: #4a3c31;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e6c2a5;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-top: 0;
+    color: #5c3a21;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5c3a21;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #d2691e;
+    border-bottom: 2px solid #d2691e;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2, h3 {
+    color: #8b4513;
+}
+
+button {
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+.recipe-card {
+    background-color: #fdf5e6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 5px solid #d2691e;
+}
+
+.recipe-card ul, .recipe-card ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.recipe-card li {
+    margin-bottom: 8px;
+}
+
+.recipe-card strong {
+    color: #5c3a21;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #888;
+}
